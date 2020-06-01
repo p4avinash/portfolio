@@ -10,14 +10,26 @@ nav{
 
 ul{
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
 }
 
+li{
+    padding-right: 40px;
+}
+
 a{
+    display: flex;
     font-size: 1.5rem;
     color: white;
     text-decoration: none;
-    padding-left: 40px;
+}
+
+a:hover{
+    transition: ease 0.3s;
+    padding:0px 10px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
 }
 
 .push{
@@ -25,10 +37,14 @@ a{
     padding-right: 10px;
 }
 
+/* ADAPTING TO SMALLER SCREEN SIZES */
 @media only screen and (max-width:650px) {
     a{
         font-size: 1rem;
-        padding-left: 20px;
+    }
+
+    li{
+        padding-right: 20px;
     }
 
     .push{
