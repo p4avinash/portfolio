@@ -3,12 +3,14 @@
     padding: 0px;
 }
 
+/* MAIN WRAPPER OF NAVIGATOIN AND COVER */
 .wrapper{
     display: flex;
     height: 100vh;
     width: 100%;
 }
 
+/* NAVIGATION */
 nav{
     position: fixed;
     height: 100vh;
@@ -28,7 +30,9 @@ a{
 }
 
 
+/* COVER */
 main{
+    padding-left: 150px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -44,6 +48,7 @@ main{
     background-position: center;
 }
 
+/* CODING TEXT */
 .text{
     font-size: 1.2rem;
     margin-top: 50px;
@@ -52,26 +57,70 @@ main{
     transition: all 0.3s;
 }
 
-
+/* ABOUT TEXT */
 .about-text{
+    padding-left: 150px;
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
 }
 
+/* ABOUT DESCRIPTION */
+.about-description{
+    display: flex;
+    margin-left: 150px;
+}
 
+.description{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    width: 50vw;
+    height: 70vh;
+    color: #de9115;
+}
+
+.blue{
+    color: #2c81e3;
+}
+
+.purple{
+    color: #a44fed;
+    line-height: 130%;
+}
+
+
+/* ABOUT PROFILE PHOTO */
+.profilePhoto{
+    display: flex;
+    background: linear-gradient(to bottom right,rgb(45, 144, 200),rgb(207, 86, 207));
+    width: 50vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo{
+    width: 50%;
+}
+
+/* ANIMATIONS FOR CODING TEXT */
 @keyframes grow{
     0%{transform: scale(1.2);}
 }
 
+
+/* MAKING EVERYTHING RESPONSIVE */
 @media only screen and (max-width:650px){
     
+    /* MAIN WRAPPER OF NAVIGATOIN AND COVER */
     .wrapper{
         display: flex;
         flex-direction: row;
         width: 100%;
     }
     
+    /* NAVIGATOIN */
     nav{
         width: 100vw;
         height: 10vh;
@@ -89,19 +138,48 @@ main{
         padding-bottom: 4%;
         background-color: black;
     }
-    
-    
+
+    /* MAIN */
+    main{
+        padding-left: 0px;
+    }
+
+    /* COVER */
     .cover{
         width:60vw;
         height: 50vh;
     }
 
+    /* BLOCKING THE CODING TEXT */
     .text{
         display: none;
     }
 
+    /* ABOUT TEXT */
     .about-text{
         font-size: 1.2rem;
+        padding-left: 0px;
     }
+
+    /* ABOUT DESCRIPTION */
+.about-description{
+    display: flex;
+    margin-left: 0px;
+    flex-wrap: wrap;
+}
+
+.description{
+    display: flex;
+    background-color: #333;
+    width: 100vw;
+    height: 70vh;
+}
+
+.profilePhoto{
+    display: flex;
+    background: linear-gradient(to bottom right,rgb(45, 144, 200),rgb(207, 86, 207));
+    width: 100vw;
+    height: 70vh;
+}
 }
 
