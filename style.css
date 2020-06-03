@@ -32,7 +32,7 @@ a{
 
 a:hover{
     transition: linear 0.3s;
-    border-left: 10px solid rgb(13, 77, 114);
+    border-left: 10px solid rgb(0, 82, 129);
     background-color:rgb(45, 144, 200) ;
 }
 
@@ -50,7 +50,7 @@ main{
 .cover{
     width: 60vw;
     height: 60vh;
-    background-image: url("/assests/cover.png");
+    background-image: url("assests/cover.png");
     background-size: cover;
     background-position: center;
 }
