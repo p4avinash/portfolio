@@ -258,7 +258,6 @@ main{
 
 /* MAKING EVERYTHING RESPONSIVE */
 @media only screen and (max-width:650px){
-    
     /* MAIN WRAPPER OF NAVIGATOIN AND COVER */
     .wrapper{
         display: flex;
@@ -316,6 +315,7 @@ main{
     /* ABOUT DESCRIPTION */
 .about-description{
     display: flex;
+    width: 100%;
     margin-left: 0px;
     flex-wrap: wrap;
 }
@@ -342,13 +342,16 @@ main{
 
 /* SKILLS */
 .skills-wrapper{
+    display: flex;
     margin-left: 0px;
+    justify-content: center;
 }
 
 
 /* FOOTER */
 .footer{
     margin-left: 0px;
+    width: 100%;
 }
 
 }
