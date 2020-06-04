@@ -159,9 +159,8 @@ main{
 }
 
 .box{
+    display: grid;
     text-align: center;
-    border: 5px solid black;
-    border: 1px solid;
 }
 
 .box:hover{
@@ -204,6 +203,10 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.skills>img:hover{
+    transform: scale(1.05);
 }
 
 
