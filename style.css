@@ -88,6 +88,7 @@ main{
     width: 50vw;
     height: 70vh;
     color: #de9115;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .blue{
@@ -156,7 +157,10 @@ main{
     text-align: center;
     border: 5px solid black;
     border: 1px solid;
-    box-shadow: 5px 10px #888888;
+}
+
+.box:hover{
+    box-shadow: 10px 10px #888888;
 }
 
 .achieve{
@@ -198,12 +202,12 @@ main{
 /* FOOTER */
 .footer{
     display: flex;
-    padding-left: 150px;
     justify-content: center;
     color: white;
     background-color: #333333;
     font-size: 1.2rem;
     padding: 5%;
+    margin-left: 150px;
 }
 
 .heart{
@@ -252,12 +256,11 @@ main{
     
     /* NAVIGATOIN */
     nav{
-        width: 100vw;
-        height: 10vh;
+        width: 100%;
+        height: 10%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        z-index: 1;
     }
     
     a{
@@ -267,7 +270,6 @@ main{
         color: white;
         text-transform: uppercase;
         padding-bottom: 4%;
-        background-color: black;
     }
 
     a:hover{
@@ -334,7 +336,7 @@ main{
 
 /* FOOTER */
 .footer{
-    padding-left: 0px;
+    margin-left: 0px;
 }
 
 }
