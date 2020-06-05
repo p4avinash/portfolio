@@ -128,6 +128,10 @@ main {
   align-items: center;
 }
 
+.profilePhoto > img:hover {
+  box-shadow: 5px 10px #272727;
+}
+
 .photo {
   width: 50%;
 }
@@ -183,7 +187,7 @@ main {
 }
 
 .box:hover {
-  box-shadow: 10px 10px #888888;
+  box-shadow: 5px 10px #3f3e3e;
 }
 
 .achieve {
@@ -203,6 +207,7 @@ main {
 
 .open-project-btn:hover {
   background: linear-gradient(to right, #000000, #2a8c98);
+  cursor: pointer;
 }
 
 /* SKILLS */
@@ -219,11 +224,13 @@ main {
   font-size: 100px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 5px;
+  border-radius: 50%;
 }
 
 .skills > img:hover {
   transform: scale(1.05);
+  box-shadow: 2px 5px #888888;
 }
 
 /* FOOTER */
