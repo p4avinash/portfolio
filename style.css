@@ -55,6 +55,9 @@ main {
   background-image: url("assests/cover.png");
   background-size: cover;
   background-position: center;
+  animation: laviate 1s linear alternate;
+  animation-iteration-count: infinite;
+  transition: all 0.3s;
 }
 
 /* CODING TEXT */
@@ -65,6 +68,7 @@ main {
   animation-iteration-count: infinite;
   transition: all 0.3s;
   font-family: Open Sans;
+  /* color: rgb(17, 147, 253); */
 }
 
 /* ABOUT TEXT */
@@ -268,6 +272,12 @@ main {
 /***************************************************************************************************************************************/
 
 /* ANIMATIONS FOR CODING TEXT */
+@keyframes laviate {
+  0% {
+    transform: translateY(20px);
+  }
+}
+
 @keyframes grow {
   0% {
     transform: scale(1.2);
